@@ -37,13 +37,13 @@ header h1 {
     text-align: center;
 }
 
+/* Menú */
 .menu-icon {
-    display: none;
+    display: none; /* Ocultar el ícono del menú */
     font-size: 24px;
     cursor: pointer;
 }
 
-/* Menú */
 nav ul {
     list-style: none;
     display: flex;
@@ -61,27 +61,12 @@ nav ul {
     color: #ffdd57;
 }
 
-/* Menú desplegable para móviles */
+/* Adaptación del menú para pantallas pequeñas */
 @media (max-width: 768px) {
-    .menu {
-        display: none;
+    nav ul {
         flex-direction: column;
-        width: 100%;
-        position: absolute;
-        background-color: #333;
-        top: 50px;
-        left: 0;
-        z-index: 1;
-    }
-
-    .menu.show {
-        display: flex;
-    }
-
-    .menu-icon {
-        display: block;
-        color: #fff;
-        text-align: center;
+        align-items: center;
+        gap: 10px;
     }
 }
 
@@ -226,3 +211,4 @@ footer {
         margin-bottom: 0;
     }
 }
+
