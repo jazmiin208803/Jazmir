@@ -61,6 +61,83 @@ transition: color 0.3s ease;
 .menu a:hover {
 color: #ffdd57;
 }
+/* Estilos generales del menú */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    max-width: 960px;
+    margin: auto;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    background-color: #575757;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: left;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+/* Mostrar menú desplegable al pasar el mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+    .menu li {
+        text-align: left;
+    }
+    .dropdown-content {
+        position: static;
+    }
+}
 
 /* Menú despegable para móviles */
 @media (max-width: 768px) {
