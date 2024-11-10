@@ -300,3 +300,20 @@ footer {
     margin-top: 5px;
     padding-left: 15px;
 }
+/* Menú despegable para móviles */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        color: #fff;
+        text-align: center;
+    }
+}
