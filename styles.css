@@ -67,6 +67,73 @@ color: #ffdd57;
     overflow: hidden;
     text-align: center;
 }
+/* Estilos para el contenedor de navegación */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+/* Estilos del ícono del menú */
+.menu-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    display: none; /* Solo se muestra en móviles */
+}
+
+/* Estilos del menú principal */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Muestra el icono en pantallas pequeñas */
+    }
+    
+    .menu {
+        display: none; /* Oculta el menú por defecto en móviles */
+        flex-direction: column;
+        position: absolute;
+        background-color: #333;
+        width: 100%;
+        left: 0;
+        top: 50px;
+        z-index: 1;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* Clase para mostrar el menú en dispositivos móviles */
+.menu.show {
+    display: flex; /* Muestra el menú cuando está activo */
+}
 
 .menu {
     list-style-type: none;
