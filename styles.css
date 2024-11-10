@@ -67,8 +67,6 @@ color: #ffdd57;
 display: none;
 flex-direction: column;
 }
-
-```
 .menu.show {
     display: flex;
 }
@@ -79,18 +77,6 @@ flex-direction: column;
     text-align: center;
 }
 
-}
-
-/* Productos */
-.producto {
-border: 1px solid #ddd;
-padding: 15px;
-text-align: center;
-margin-bottom: 20px;
-float: left;
-width: calc(50% - 20px);
-box-sizing: border-box;
-transition: transform 0.3s ease;
 }
 
 /* Productos */
