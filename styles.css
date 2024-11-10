@@ -36,6 +36,7 @@ z-index: 10;
 header h1 {
 font-size: 2rem;
 text-align: center;
+
 }
 
 .menu-icon {
@@ -67,6 +68,8 @@ color: #ffdd57;
 display: none;
 flex-direction: column;
 }
+
+```
 .menu.show {
     display: flex;
 }
@@ -76,6 +79,8 @@ flex-direction: column;
     color: #fff;
     text-align: center;
 }
+
+```
 
 }
 
@@ -215,12 +220,10 @@ justify-content: space-between;
 align-items: flex-start;
 }
 
-```
 .footer-section {
     text-align: left;
     margin-bottom: 0;
 }
 
-```
 
 }
