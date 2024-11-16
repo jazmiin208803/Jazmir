@@ -36,7 +36,6 @@ z-index: 10;
 header h1 {
 font-size: 2rem;
 text-align: center;
-
 }
 
 .menu-icon {
@@ -61,7 +60,6 @@ transition: color 0.3s ease;
 .menu a:hover {
 color: #ffdd57;
 }
-
 
 /* Diseño responsivo para móviles */
 @media (max-width: 768px) {
