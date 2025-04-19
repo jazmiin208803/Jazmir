@@ -1,61 +1,212 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
-
+/* Tipografía y colores base */
 body {
+  margin: 0;
   font-family: 'Lexend', sans-serif;
   background-color: #89cfdd;
   color: #355e69;
+}
+.acerca img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+/* CONTENIDO PRINCIPAL CON EFECTO FADE */
+.contenido-fade {
+  animation: fadeIn 1.2s ease forwards;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ANIMACIÓN SUAVE */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* SECCIÓN ACERCA DE MÍ */
+.acerca-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.acerca-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.acerca-texto {
+  max-width: 600px;
+}
+
+.acerca-texto h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #355e69;
+}
+
+.acerca-texto p {
+  font-size: 1rem;
+  margin-bottom: 16px;
+  color: #355e69;
+}
+
+/* FOOTER */
+.footer {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #eaf7fc;
+  margin-top: 40px;
+}
+
+.footer-redes {
+  margin-top: 15px;
+}
+
+.footer-redes a {
+  color: #355e69;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+.footer-redes a:hover {
+  color: #ffffff;
+  background-color: #355e69;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+/* Menú superior */
+.menu-superior {
+  background-color: #eaf7fc;
+  padding: 20px 30px;
+  border-radius: 0 0 12px 12px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.menu-superior ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
 
-.container {
-  padding: 2rem;
-  max-width: 1200px;
+.menu-superior li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #355e69;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.menu-superior li a:hover {
+  color: #ffffff;
+}
+
+/* Contenido principal */
+.contenido-principal {
+  margin-top: 100px;
+  padding: 20px;
+  text-align: center;
+}
+.botones-secundarios {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px 20px;
+  flex-wrap: wrap;
+}
+
+.botones-secundarios a {
+  text-decoration: none;
+  font-family: 'Lexend', sans-serif;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 2px solid #355e69;
+  color: #355e69;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.botones-secundarios a:hover {
+  background-color: #355e69;
+  color: #ffffff;
+}
+
+/* Galería destacada */
+.galeria-destacada {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  padding: 20px;
+  max-width: 800px;
   margin: auto;
 }
 
-h1, h2, h3 {
-  color: #355e69;
-}
-
-img.zoomable {
+.galeria-destacada .card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
   transition: transform 0.3s ease;
 }
 
-img.zoomable:hover {
-  transform: scale(1.05);
+.galeria-destacada .card:hover {
+  transform: scale(1.03);
 }
 
-/* Galería */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+.galeria-destacada img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 8px;
 }
 
-/* Blog */
-.blog-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+.galeria-destacada p {
+  color: #355e69;
+  font-size: 12px;
+  margin: 0;
 }
 
-.blog-block {
-  background-color: #f7f7f7;
-  padding: 1rem;
-  border-radius: 8px;
+/* Footer */
+footer {
+  background-color: #eaf7fc;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ccc;
 }
 
-/* Acerca de mí */
-.profile-section {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
+.redes-sociales a {
+  margin: 0 10px;
+  color: #355e69;
+  text-decoration: none;
 }
 
-.profile-img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
+.redes-sociales a:hover {
+  text-decoration: underline;
 }
