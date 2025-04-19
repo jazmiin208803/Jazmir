@@ -1,3 +1,22 @@
+.decoracion-header {
+  position: absolute;
+  top: 10px;
+  left: 20px; 
+  width: 80px;
+  height: auto;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+.decoracion-header:hover {
+  transform: scale(0.9); /* Se hace un poco más pequeña al pasar el mouse */
+}
+
+header {
+  position: relative;
+}
+
+
 .contenido-fade {
   animation: fadeIn 1.2s ease forwards;
   padding: 60px 20px;
