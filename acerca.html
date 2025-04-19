@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acerca de mí</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+  <style>
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .contenido {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-size: 18px;
+    }
+
+    .contenido h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .contenido p {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado con imagen -->
+  <header class="hero">
+    <img src="img/header.jpg" alt="Encabezado">
+  </header>
+
+  <!-- Menú superior con dropdown -->
+  <nav class="menu-superior">
+    <ul>
+      <li class="dropdown">
+        <a href="#">Inicio</a>
+        <ul class="dropdown-menu">
+          <li><a href="ilustracion.html">Ilustración</a></li>
+          <li><a href="diseno.html">Diseño</a></li>
+          <li><a href="otros.html">Otros trabajos</a></li>
+        </ul>
+      </li>
+      <li><a href="acerca.html">Acerca de mí</a></li>
+      <li><a href="blog.html">Blog diario</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido de la página "Acerca de mí" -->
+  <section class="contenido fade-in">
+    <h1>Acerca de mí</h1>
+    <p>¡Hola! Soy [Tu nombre], diseñadora gráfica apasionada por la ilustración y la comunicación visual. Desde siempre he buscado transmitir ideas, emociones y conceptos a través de colores, formas y composiciones visuales.</p>
+    <p>En este espacio podrás conocer más sobre mi trayectoria, mis intereses y el corazón detrás de cada uno de mis proyectos. Espero que encuentres inspiración en cada rincón de esta página.</p>
+  </section>
+
+  <!-- Botones secundarios -->
+  <div class="botones-secundarios">
+    <a href="ilustracion.html">Ilustración</a>
+    <a href="diseno.html">Diseño</a>
+    <a href="otros.html">Otros trabajos</a>
+  </div>
+
+  <!-- Footer básico -->
+  <footer style="text-align:center; padding: 20px; font-size: 14px; color: #355e69;">
+    © 2025 [Tu nombre] · Todos los derechos reservados.
+  </footer>
+</body>
+</html>
