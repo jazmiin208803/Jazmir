@@ -103,29 +103,27 @@ blockquote {
   z-index: 1000;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-  
-.menu ul {
+  .menu-superior ul {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
   gap: 30px;
-  margin-bottom: 30px;
+  justify-content: center;
+  padding: 20px 0;
+  margin: 0;
 }
 
-.menu a {
+.menu-superior li a {
   text-decoration: none;
-  color: #355e69;
   font-weight: bold;
-   margin-bottom: 30px;
+  color: #355e69;
+  font-size: 18px;
+  transition: color 0.3s;
 }
 
-.menu a:hover {
-  text-decoration: underline;
+.menu-superior li a:hover {
+  color: #ffffff;
 }
-  
-.main-content {
-  margin-top: 100px;
-  padding: 20px;
+
 }
 /* Galería destacada */
 .galeria-destacada {
