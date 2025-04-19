@@ -6,6 +6,7 @@
 }
 /* Página de Información */
 .info-page {
+  margin-top: 40px;
   padding: 60px 20px;
   display: flex;
   justify-content: center;
