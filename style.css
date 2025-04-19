@@ -150,9 +150,14 @@ blockquote {
   transition: transform 0.3s ease;
 }
 
-.galeria-destacada .card:hover {
-  transform: scale(1.03);
+img.zoomable {
+  transition: transform 0.3s ease;
 }
+
+img.zoomable:hover {
+  transform: scale(1.05);
+}
+
 
 .galeria-destacada img {
   width: 100%;
