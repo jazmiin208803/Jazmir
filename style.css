@@ -92,6 +92,12 @@ blockquote {
 }
 
 /* Menú superior */
+  .menu {
+  background-color: #eaf7fc;
+  padding: 20px 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+    
 .menu ul {
   list-style: none;
   display: flex;
@@ -104,6 +110,7 @@ blockquote {
   text-decoration: none;
   color: #355e69;
   font-weight: bold;
+   margin-bottom: 30px;
 }
 
 .menu a:hover {
