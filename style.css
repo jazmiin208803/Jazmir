@@ -1,41 +1,4 @@
-.blog-layout {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
-  flex-wrap: wrap;
-}
 
-.texto-blog {
-  flex: 1 1 60%;
-}
-
-.imagen-blog {
-  flex: 1 1 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.imagen-blog img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 12px;
-  animation: fadeIn 1s ease-in-out;
-  margin-top: 95px;
-}
-/* Animación opcional si no la tienes ya */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .decoracion-header {
   position: absolute;
   top: 10px;
