@@ -135,15 +135,30 @@ blockquote {
   padding: 20px;
 }
 
-.galeria-destacada img {
-  width: 100%;
-  height: auto;
+.galeria-destacada .card {
+  background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
   transition: transform 0.3s ease;
 }
 
-.galeria-destacada img:hover {
+.galeria-destacada .card:hover {
   transform: scale(1.05);
+}
+
+.galeria-destacada img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.galeria-destacada p {
+  color: #355e69;
+  font-size: 14px;
+  margin: 0;
 }
