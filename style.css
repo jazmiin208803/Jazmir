@@ -1,3 +1,15 @@
+.contenido-fade {
+  animation: fadeIn 1.2s ease forwards;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ANIMACIÓN SUAVE */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
 /* Tipografía y colores base */
 body {
   margin: 0;
