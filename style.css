@@ -92,12 +92,18 @@ blockquote {
 }
 
 /* Menú superior */
-  .menu {
+ .menu {
   background-color: #eaf7fc;
   padding: 20px 30px;
-  border-radius: 12px;
-  margin-bottom: 30px;
-    
+  border-radius: 0 0 12px 12px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+  
 .menu ul {
   list-style: none;
   display: flex;
@@ -116,7 +122,11 @@ blockquote {
 .menu a:hover {
   text-decoration: underline;
 }
-
+  
+.main-content {
+  margin-top: 100px;
+  padding: 20px;
+}
 /* Galería destacada */
 .galeria-destacada {
   display: flex;
