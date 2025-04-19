@@ -71,8 +71,8 @@ body {
 }
 
 .playlist img {
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   border-radius: 8px;
   object-fit: cover;
 }
