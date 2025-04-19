@@ -58,32 +58,6 @@ body {
   color: #355e69;
 }
 
-/* FOOTER */
-.footer {
-  padding: 40px 20px;
-  text-align: center;
-  background-color: #eaf7fc;
-  margin-top: 40px;
-}
-
-.footer-redes {
-  margin-top: 15px;
-}
-
-.footer-redes a {
-  color: #355e69;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 0 5px;
-}
-
-.footer-redes a:hover {
-  color: #ffffff;
-  background-color: #355e69;
-  padding: 4px 8px;
-  border-radius: 6px;
-}
-
 .banner img {
   width: 100%;
   height: auto;
