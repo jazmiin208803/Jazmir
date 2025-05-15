@@ -278,6 +278,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin-top: 40px;
+
 }
 
 .galeria-carrusel {
@@ -301,6 +303,8 @@ body {
   width: 100%;
   height: auto;
   border-radius: 16px;
+  margin-top: 40px;
+
 }
 
 .carrusel-img.activa {
