@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galería</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style5.css" />
+</head>
+<body>
+  <section class="galeria-carrusel">
+    <div class="carrusel">
+      <img src="img/img1.jpg" class="carrusel-img activa" alt="Imagen 1">
+      <img src="img/img2.jpg" class="carrusel-img" alt="Imagen 2">
+      <img src="img/img3.jpg" class="carrusel-img" alt="Imagen 3">
+    </div>
+
+    <button class="flecha izquierda">&#10094;</button>
+    <button class="flecha derecha">&#10095;</button>
+  </section>
+
+  <script>
+    const imagenes = document.querySelectorAll('.carrusel-img');
+    const flechaIzq = document.querySelector('.izquierda');
+    const flechaDer = document.querySelector('.derecha');
+    let indice = 0;
+
+    function mostrarImagen(i) {
+      imagenes.forEach(img => img.classList.remove('activa'));
+      imagenes[i].classList.add('activa');
+    }
+
+    flechaIzq.addEventListener('click', () => {
+      indice = (indice - 1 + imagenes.length) % imagenes.length;
+      mostrarImagen(indice);
+    });
+
+    flechaDer.addEventListener('click', () => {
+      indice = (indice + 1) % imagenes.length;
+      mostrarImagen(indice);
+    });
+  </script>
+</body>
+</html>
